@@ -9,14 +9,43 @@ function Menu() {
 
         <nav>
 
-            jsx // htlm element 
+            <li>Home</li>
+            <li>About</li>
+            <li>Log in</li>
+            <li>Cart</li> 
 
         </nav>
     )
 }
 
+function MyInfo() {
+
+    return(
+
+        <div> 
+
+            <h1>Avilin</h1>
+
+            <p> I love the Internet and cute dogs!</p>
+
+            <ul>Hej</ul>
+            <ul>Hej igen</ul>
+            <ul>Hej då!</ul>
+
+
+
+        </div>
+
+    )
+
+
+}
+
 // måste exportera funktionen så den kan användas/importera i tex App.js
-export default Menu; 
+
+export {Menu, MyInfo};
+
+
 
 
 
