@@ -18,32 +18,11 @@ function Menu() {
     )
 }
 
-function MyInfo() {
 
-    return(
-
-        <div> 
-
-            <h1>Avilin</h1>
-
-            <p> I love the Internet and cute dogs!</p>
-
-            <ul>Hej</ul>
-            <ul>Hej igen</ul>
-            <ul>Hej då!</ul>
-
-
-
-        </div>
-
-    )
-
-
-}
 
 // måste exportera funktionen så den kan användas/importera i tex App.js
 
-export {Menu, MyInfo};
+export default Menu;
 
 
 
