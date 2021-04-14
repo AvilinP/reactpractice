@@ -5,8 +5,14 @@ function Footer() {
 
     return (
 
-        <h2> This is a nice looking footer</h2>
+        <footer className="footer">
+            <h2> This is a nice looking footer</h2>
 
+            <ul>Up</ul>
+            <ul>Contact Us</ul>
+            <ul>Address</ul>
+
+        </footer>
 
     )
 

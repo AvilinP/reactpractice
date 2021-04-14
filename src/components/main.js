@@ -1,26 +1,27 @@
 import React from "react";
 
-function MyInfo() {
+function Main() {
 
     return(
 
-        <div> 
+        <main className="todo"> 
 
-            <h1>Avilin</h1>
+            
+            <input type="checkbox" /> <span> Diska </span>
+            <br></br> 
+            <input type="checkbox" /> <span> Sjunga karaoke </span> 
+            <br></br>
+            <input type="checkbox" /> <span> Gå ut med hunden </span>
+            <br></br>
+            
 
-            <p>I love the Internet and cute dogs!</p>
-
-            <ul>Hej</ul>
-            <ul>Hej igen</ul>
-            <ul>Hej då!</ul>
+        </main>
 
 
-
-        </div>
 
     )
 
 
 }
 
-export default MyInfo;
+export default Main;

@@ -7,7 +7,7 @@ function Menu() {
     // funktionen måste returnera JSX 
     return (
 
-        <nav>
+        <nav className="nav">
 
             <li>Home</li>
             <li>About</li>

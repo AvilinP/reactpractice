@@ -3,7 +3,7 @@ import './App.css';
 
 // importera funktionen Menu från sin path
 import Menu from "./components/menu";
-import MyInfo from "./components/main";
+import Main from "./components/main";
 import Footer from "./components/footer";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
 
       <Menu />
 
-      <MyInfo />
+      <Main />
 
       <Footer />
 
