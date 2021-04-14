@@ -14,9 +14,15 @@ function Clock() {
         timeOfDay = "evening";
     }
 
+    const styles = {
+        color: "lightyellow",
+        backgroundColor: "lightgreen",
+        padding: "1.5rem"
+    }
+
     return (
         <div className="clock">
-            <h1>Have a nice {timeOfDay}! </h1>
+            <h1 style={styles}> Have a nice {timeOfDay}! </h1>
         </div>
     )
 
