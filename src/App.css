@@ -14,18 +14,30 @@
   color:blue;
 }
 
+.clock {
+  padding-top: 2.5rem;
+  color: lightgoldenrodyellow;
+}
+
 .footer {
-  margin-top: 15rem;
-  padding-top: 10rem;
+  margin-top: 20rem;
+  padding-top: 5rem;
   padding-bottom: 2rem;
   background-color: lightcoral;
 }
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+
 
 .App {
   text-align: center;
   background-color: lightblue;
   padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .App-logo {

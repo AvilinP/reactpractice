@@ -5,16 +5,23 @@ import './App.css';
 import Menu from "./components/menu";
 import Main from "./components/main";
 import Footer from "./components/footer";
+import Clock from "./components/clock";
 
 function App() {
+
+  const greeting = "React";
+  const hello = "hej";
+
   return (
     <div className="App">
 
-      <h1>Hej hej REACT!</h1>
+      <h1>Hej {`${hello} ${hello}`} {greeting}!</h1>
 
       <Menu />
 
       <Main />
+
+      <Clock />
 
       <Footer />
 
