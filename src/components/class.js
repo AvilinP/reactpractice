@@ -8,14 +8,14 @@ class ClassComp extends React.Component {
         const styles = {
             color: "lightgreen",
             backgroundColor: "lightyellow",
-            padding: "0.5rem",
+            padding: "0.2rem",
             margin: 0,
             textAlign: "center"
         }
 
         return (
             <div>
-                <p style={styles}>{this.props.whatever} Love you!</p>
+                <p style={styles}>{this.props.whatever} You're the best!</p>
             </div>
         )
     }
@@ -75,16 +75,21 @@ class State extends Component {
     constructor() {
         super();
         this.state = {
-            question: "Is state important?",
-            answer: "Ofc!"
+            isLoggedIn: true
         }
     }
 
     render() {
 
+        let wordDisplay
+        if(this.state.isLoggedIn == true) {
+            wordDisplay = "in";
+        } else {
+            wordDisplay = "out";
+        }
         return(
             <div> 
-                <h1>{this.state.question} {this.state.answer} </h1>
+                <h3>You are currently logged {wordDisplay} </h3>
             </div>
         )
     }
