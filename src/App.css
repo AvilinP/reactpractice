@@ -4,6 +4,14 @@
   padding-top: 5rem;
 }
 
+.header {
+  text-align: center;
+  color: lightyellow;
+  background-color: lightgreen;
+  padding: 1.5rem;
+  
+}
+
 .nav {
   display: flex;
   justify-content: center;

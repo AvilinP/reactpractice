@@ -1,4 +1,5 @@
 // import logo from './logo.svg';
+import React from "react";
 import './App.css';
 
 // importera funktionen Menu från sin path
@@ -10,6 +11,8 @@ import ContactCard from "./components/contactCard";
 
 import todosData from "./components/todosData";
 import TodoItem from "./components/todoItem";
+
+
 
 function App() {
 
@@ -45,5 +48,8 @@ function App() {
     </div>
   );
 }
+
+
+
 
 export default App;

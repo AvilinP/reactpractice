@@ -4,9 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import {ClassComp, Above} from "./components/class";
+
+
 ReactDOM.render(
   <React.StrictMode>
+
+    <ClassComp />
+    <Above />
     <App />
+
   </React.StrictMode>,
   document.getElementById('root')
 );
