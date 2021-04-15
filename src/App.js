@@ -7,6 +7,7 @@ import Main from "./components/main";
 import Footer from "./components/footer";
 import Clock from "./components/clock";
 
+
 function App() {
 
   const greeting = "React";

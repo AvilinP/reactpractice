@@ -1,4 +1,5 @@
 import React from "react";
+import TodoItem from "./todoItem";
 
 function Main() {
 
@@ -7,13 +8,11 @@ function Main() {
 
         <main className="todo"> 
 
-            
-            <input type="checkbox" /> <span> Diska </span>
-            <br></br> 
-            <input type="checkbox" /> <span> Sjunga karaoke </span> 
+            <TodoItem /> 
             <br></br>
-            <input type="checkbox" /> <span> Gå ut med hunden </span>
+            <TodoItem /> 
             <br></br>
+            <TodoItem /> 
             
 
         </main>
