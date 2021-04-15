@@ -18,6 +18,16 @@
   margin-top: 2.5rem;
 }
 
+.ada {
+  padding-top: 1.5rem;
+  color: purple;
+}
+
+.adaImage {
+  border-radius: 50%;
+  width: 50%;
+}
+
 .footer {
   margin-top: 20rem;
   padding-top: 5rem;
