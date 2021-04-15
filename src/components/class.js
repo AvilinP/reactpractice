@@ -29,6 +29,7 @@ class Above extends React.Component {
             <div className="header">
                 <Header username= "Ada"/>
                 <Greetings />
+                <State />
             </div>
         )
     }
@@ -68,6 +69,27 @@ class Greetings extends Component {
 
     }
 }
+
+class State extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            question: "Is state important?",
+            answer: "Ofc!"
+        }
+    }
+
+    render() {
+
+        return(
+            <div> 
+                <h1>{this.state.question} {this.state.answer} </h1>
+            </div>
+        )
+    }
+}
+
 
 
 

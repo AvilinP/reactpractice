@@ -12,6 +12,8 @@ import ContactCard from "./components/contactCard";
 import todosData from "./components/todosData";
 import TodoItem from "./components/todoItem";
 
+import Counter from "./components/counter";
+
 
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
   const greeting = "React";
   const hello = "hi";
 
- const todoItems = todosData.map(item => <TodoItem key={item.id} todo={item} />)
+  const todoItems = todosData.map(item => <TodoItem key={item.id} todo={item} />)
 
   return (
     <div className="App">
@@ -30,7 +32,12 @@ function App() {
 
       {todoItems}
 
+      <div className="counter"> 
+        <Counter />
+      </div>
+
       <Clock />
+
 
       <ContactCard 
          

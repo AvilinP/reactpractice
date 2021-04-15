@@ -28,6 +28,14 @@
   color:blue;
 }
 
+.counter {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: linen;
+
+}
+
 .clock {
   margin-top: 2.5rem;
 }
@@ -39,7 +47,7 @@
 
 .adaImage {
   border-radius: 50%;
-  width: 50%;
+  width: 30%;
 }
 
 .footer {
