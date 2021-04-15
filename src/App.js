@@ -3,22 +3,20 @@ import './App.css';
 
 // importera funktionen Menu från sin path
 import Menu from "./components/menu";
-import Main from "./components/main";
+
 import Footer from "./components/footer";
 import Clock from "./components/clock";
 import ContactCard from "./components/contactCard";
 
-import Product from "./components/product";
-import productsData from "./components/productsData";
-
-
+import todosData from "./components/todosData";
+import TodoItem from "./components/todoItem";
 
 function App() {
 
   const greeting = "React";
   const hello = "hi";
 
-  const productComponents = productsData.map(item => <Product key={item.id} product={item} />) 
+ const todoItems = todosData.map(item => <TodoItem key={item.id} todo={item} />)
 
   return (
     <div className="App">
@@ -27,7 +25,7 @@ function App() {
 
       <Menu />
 
-      <Main />
+      {todoItems}
 
       <Clock />
 
@@ -41,8 +39,6 @@ function App() {
         }}
 
       />
-
-      {productComponents}
 
       <Footer />
 
