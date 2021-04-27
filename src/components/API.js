@@ -4,7 +4,7 @@ import axios from "axios";
 
 function API() {
 
-    const [data , setData] = useState([]);
+    const [data , setData] = useState([]); // För ett object ([{}]) 
 
     // Triggas efter render, här anropas API
     useEffect(()=>{
@@ -33,7 +33,10 @@ function API() {
     return (
         <div className="APIscroll">
             <p> Data kommer skrivas ut här </p> 
-            {data.map((singleData)=>{ return <h1> {singleData.title} </h1> })}
+            {data.map((singleData)=>{ return <h1 key={singleData.Id}>  {singleData.title} </h1> })}
+
+            {/* för ett object i API-listan /1 */}
+            {/* {data.title}*/} 
         </div>
     )
 }
