@@ -31,7 +31,7 @@ function API() {
     
     // Render, anropa inte API här
     return (
-        <div>
+        <div className="APIscroll">
             <p> Data kommer skrivas ut här </p> 
             {data.map((singleData)=>{ return <h1> {singleData.title} </h1> })}
         </div>

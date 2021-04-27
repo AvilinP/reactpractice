@@ -58,11 +58,9 @@ function App() {
 
         />
 
+        <API />  
+        
         <Footer />
-
-
-       <API />   
-      
 
       </div>
 
