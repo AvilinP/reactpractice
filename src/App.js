@@ -18,6 +18,8 @@ import Form from "./components/form";
 
 import API from "./components/API";
 
+// importera bild från src-mappen
+import fire from "./assets/fire.jpg";
 
 
 
@@ -58,8 +60,21 @@ function App() {
 
         />
 
-        <API />  
         
+
+        <API />
+
+        <img style={{width:"40rem"}} src={fire} alt="Fire"/>  <br/>
+        <img style={{width:"40rem"}} src={require("./assets/fire.jpg").default} alt="fire with require" />
+
+        {/* relative path om assets är i public-mappen */}
+        <img src="/assets/fire.jpg" alt="fire with relative path" />
+
+        <div className="bgImage" style={{backgroundImage:`url(${fire})`}}>
+            <p>hej</p>
+        </div>
+       
+ 
         <Footer />
 
       </div>

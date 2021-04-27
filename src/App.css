@@ -71,7 +71,15 @@
   overflow: scroll;
   position: relative;
   left: 15rem;
+  margin-bottom: 2rem;
 }
 
 
-
+.bgImage {
+  border-radius: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 10rem;
+}
