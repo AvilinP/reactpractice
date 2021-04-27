@@ -14,6 +14,12 @@ import TodoItem from "./components/todoItem";
 
 import Counter from "./components/counter";
 
+import Form from "./components/form";
+
+import API from "./components/API";
+
+
+
 
 
 function App() {
@@ -24,35 +30,42 @@ function App() {
   const todoItems = todosData.map(item => <TodoItem key={item.id} todo={item} />)
 
   return (
-    <div className="App">
 
-      <h1>Hello {`${hello} ${hello}`} {greeting}!</h1>
+      <div className="App">
 
-      <Menu />
+        <h1>Hello {`${hello} ${hello}`} {greeting}!</h1>
 
-      {todoItems}
+        <Menu />
 
-      <div className="counter"> 
-        <Counter />
+        {todoItems}
+
+        <div className="counter"> 
+          <Counter />
+        </div>
+
+        {/* <Form /> */}
+
+        <Clock />
+      
+        <ContactCard 
+          
+          contact={{
+            name: "Ada Lovelace" , 
+            imgUrl: "https://wearetechwomen.com/wp-content/uploads/2020/02/Ada-Lovelace.jpg", 
+            phone: "00 11 22 33", 
+            email: "ada@lovelace.com"
+          }}
+
+        />
+
+        <Footer />
+
+
+       <API />   
+      
+
       </div>
 
-      <Clock />
-
-
-      <ContactCard 
-         
-        contact={{
-          name: "Ada Lovelace" , 
-          imgUrl: "https://wearetechwomen.com/wp-content/uploads/2020/02/Ada-Lovelace.jpg", 
-          phone: "00 11 22 33", 
-          email: "ada@lovelace.com"
-        }}
-
-      />
-
-      <Footer />
-
-    </div>
   );
 }
 

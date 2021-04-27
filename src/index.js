@@ -6,12 +6,11 @@ import reportWebVitals from './reportWebVitals';
 
 import {ClassComp, Above} from "./components/class";
 
-
 ReactDOM.render(
-  <React.StrictMode>
-
-    <ClassComp />
+  <React.StrictMode> 
+   
     <Above />
+    <ClassComp />
     <App />
 
   </React.StrictMode>,
